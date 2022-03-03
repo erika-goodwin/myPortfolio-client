@@ -20,7 +20,7 @@ export const About = () => {
     <>
       <div className="about-con ">
         <div className="about-con-top ">
-            {windowSize.width < 768 && <h1>Erika Hashizume</h1>}
+          {windowSize.width < 768 && <h1>Erika Hashizume</h1>}
           <div className="about-con-top-resume ">
             <ul className="about-con-top-resume-linkCont ">
               <li>
@@ -62,15 +62,13 @@ export const About = () => {
           <div className="about-con-below-pic ">
             <div className="about-con-below-pic-absolute ">
               <div className="about-con-below-pic-absolute-picCont ">
-                <a href="#" className="photo ">
-                  <h2>
-                    Erika <br /> Hashizume
-                  </h2>
-                  <img src={topPic} alt="erika-pic" className="" />
-                  <div className="glow-wrap ">
-                    <i className="glow"></i>
-                  </div>
-                </a>
+                <h2>
+                  Erika <br /> Hashizume
+                </h2>
+                <img src={topPic} alt="erika-pic" className="" />
+                <div className="glow-wrap ">
+                  <i className="glow"></i>
+                </div>
               </div>
             </div>
           </div>

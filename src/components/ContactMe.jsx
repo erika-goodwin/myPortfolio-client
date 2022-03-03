@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { BsLinkedin, BsGithub } from "react-icons/bs";
 import axios from "axios";
-import { Form, Button, Row, Col } from "react-bootstrap";
+import { Form, Row, Col } from "react-bootstrap";
 
 function ContactMe() {
   const [name, setName] = useState("");

@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useState } from "react";
+import React from "react";
 import { MdOutlineLocationOn } from "react-icons/md";
 import topPic from "../image/top-me-pic.jpg";
 
