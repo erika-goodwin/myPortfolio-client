@@ -67,9 +67,9 @@ export const ProjectPage = () => {
                 key={project._id}
                 data={project}
                 info={selectedInfo}
-                showModal={showModal}
-                onHover={showSelectedProject}
-                onLeave={leaveSelectedProject}
+                // showModal={showModal}
+                // onHover={showSelectedProject}
+                // onLeave={leaveSelectedProject}
               />
             );
           })}

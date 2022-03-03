@@ -9,18 +9,17 @@ export const ProjectPagePicture = ({ info, showModal }) => {
   const [mobileImage, setMobileImage] = useState(
     "/projectlist-image/nodeblogapp-pic1.png"
   );
-
+  console.log("hover");
   useEffect(() => {
     // info !== undefined && setMobileImage(info.image[0].original);
     if (windowSize.width <= 768) {
       if (info === undefined) {
         return console.log("info undefined:", info);
       } else {
-        console.log("info is not undefined", info.image[0].original);
-        const mobileImage = info.image[0].original;
-        setMobileImage(mobileImage);
-        console.log("mobileImage data: ", mobileImage);
+        setMobileImage(info.image[0].original);
       }
+      console.log(mobileImage);
+  
     }
   }, [info]);
 

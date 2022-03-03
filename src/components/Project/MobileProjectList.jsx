@@ -9,9 +9,9 @@ function MobileProjectList({ data, info, showModal, onHover, onLeave }) {
     <Link to={`/project/${data._id}`} className="mobile-project">
       <div
         className="mobile-project-con"
-        onMouseEnter={() => onHover(data._id)}
-        onClick={() => onHover(data._id)}
-        onMouseLeave={() => onLeave()}
+        // onMouseEnter={() => onHover(data._id)}
+        // onClick={() => onHover(data._id)}
+        // onMouseLeave={() => onLeave()}
       >
         <h1>{data.title}</h1>
         <h4>{data.summary}</h4>
