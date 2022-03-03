@@ -43,7 +43,6 @@ const settingChanger = (location) => {
 };
 
 const bugerOpener = (open) => {
-
   return open ? "translateXOpen" : "translateXClose";
 };
 
@@ -70,15 +69,16 @@ function Nav() {
   return (
     <nav className={`nav-con ${backgroundClass}`}>
       <div className="nav-con-1 ">
-        <a href="/" className={navHoverClass}>
+        {/* <Link to="/" className={navHoverClass}> */}
+        <Link to="/" className={`link ${navHoverClass}`}>
           <h3>Erika Hashizume</h3>
-        </a>
+        </Link>
       </div>
       <div className="nav-con-2">
         {windowSize.width > 768 ? (
           <ul className="nav-con-2-ul">
             {navigationMenu.map((item) => (
-               <Link
+              <Link
                 to={item.url}
                 key={item.name}
                 className={`nav-con-2-ul-link ${navHoverClass}`}
@@ -95,8 +95,8 @@ function Nav() {
       <div ref={node} className={`burgerNav ${burgerOpenClass}`}>
         <div className="burgerNav-ul">
           <Link
-            to='/'
-            key='home'
+            to="/"
+            key="home"
             className={`burgerNav-ul-link`}
             onClick={() => {
               setOpen(!open);

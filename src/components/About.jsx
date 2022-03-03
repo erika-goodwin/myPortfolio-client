@@ -18,7 +18,7 @@ export const About = () => {
   const windowSize = useWindowSize();
   return (
     <>
-      <div className="about-con ">
+      <div className="about-con ?">
         <div className="about-con-top ">
           {windowSize.width < 768 && <h1>Erika Hashizume</h1>}
           <div className="about-con-top-resume ">
@@ -72,7 +72,7 @@ export const About = () => {
               </div>
             </div>
           </div>
-          <div className="about-con-below-des">
+          <div className="about-con-below-des ?">
             <div className="about-con-below-des-summary ">
               <h4>
                 I am a Full-stack web developer with experience in HTML/CSS and
@@ -94,7 +94,7 @@ export const About = () => {
                 et optio Tempore, voluptas minus
               </p>
             </div>
-            <div className="about-con-below-des-skill ">
+            <div className="about-con-below-des-skill ?">
               <h3>Technical Skill</h3>
               <div className="about-con-below-des-skill-con ">
                 <div className="about-con-below-des-skill-con-con1">
