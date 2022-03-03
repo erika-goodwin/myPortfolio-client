@@ -1,0 +1,39 @@
+@use "../setting/color" as *;
+
+@mixin tag {
+  padding: 1rem 0;
+  @media (max-width: 670px) {
+    padding: 0;
+  }
+  ul {
+    width: 80%;
+    margin: 0 auto;
+    @media (max-width: 670px) {
+      width: 100%;
+    }
+
+    padding: 0;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+    justify-content: space-between;
+    li {
+      list-style-type: none;
+      background-color: $color-backl-8;
+      padding: 0.5rem;
+      border-radius: 0.7rem;
+      margin-right: 1rem;
+
+      @media (max-width: 550px) {
+        padding: 0.4rem;
+        border-radius: 0.5rem;
+        margin-right: 0.3rem;
+        p {
+          font-size: 0.7rem;
+        }
+      }
+    }
+  }
+}
