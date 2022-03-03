@@ -1,9 +1,16 @@
 import React from "react";
 import ProjectModal from "./ProjectModal";
 import useWindowSize from "../../tool/useWindowSize";
+import { useState } from "react";
+import { useEffect } from "react";
 
 export const ProjectPagePicture = ({ info, showModal }) => {
   const windowSize = useWindowSize();
+  const [mobileImage, setMobileImage] = useState('/projectlist-image/nodeblogapp-pic1.png')
+
+  useEffect(() => {
+    setMobileImage(info.image[0].original);
+  }, [info]);
 
   return (
     <>
@@ -21,7 +28,10 @@ export const ProjectPagePicture = ({ info, showModal }) => {
         </div>
       ) : (
         <div className="mobile-project-con-pic">
-          <img src={info.image[0].original} alt="projectImage" />
+          <img
+            src={mobileImage}
+            alt="projectImage"
+          />
         </div>
       )}
     </>

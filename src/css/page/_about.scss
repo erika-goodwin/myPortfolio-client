@@ -332,6 +332,11 @@
             }
 
             h2 {
+              // position: absolute;
+              // z-index: 1;
+              // transform: translate(-25%, -77%);
+              // margin: 0;
+              // line-height: 1.2;
               font-size: 1.8rem;
             }
           }
@@ -415,6 +420,11 @@
     height: auto;
     margin: 2vh;
 
+    // @media (min-width: 501px) and (max-width: 594px) {
+    //   height: 87vh;
+    //   margin: 1.5vh;
+    // }
+
     &-top {
       height: auto;
       width: 100%;
@@ -492,7 +502,17 @@
           &-picCont {
             a {
               h2 {
+                // font-size: 1.4rem;
                 display: none;
+                // @media (min-width: 608px) and (max-width: 740px) {
+                //   font-size: 1.3rem;
+                // }
+                // @media (min-width: 595px) and (max-width: 607px) {
+                //   font-size: 1.2rem;
+                // }
+                // @media (min-width: 587px) and (max-width: 594px) {
+                //   font-size: 1.4rem;
+                // }
               }
             }
             .photo {
@@ -562,6 +582,7 @@
               @media (min-width: 501px) and (max-width: 594px) {
                 padding: 0.7rem;
                 width: 85%;
+                // margin: 0 auto;
               }
 
               h4 {
@@ -589,10 +610,13 @@
           &-con {
             width: 100%;
             .grid {
+              // display: grid;
               grid-template-columns: 15% 50% 35%;
+              // background-color: rgba(255, 255, 255, 0.623);
               h5 {
                 font-size: 1rem;
               }
+
               p {
                 font-size: 0.8rem;
               }
@@ -674,6 +698,10 @@
             a {
               h2 {
                 display: none;
+                // font-size: 1.4rem;
+                // @media (min-width: 376px) and (max-width: 430px) {
+                //   font-size: 1.2rem;
+                // }
               }
             }
             .photo {
@@ -900,6 +928,9 @@
 
         &-skill {
           padding: 1rem 1rem 0 1rem;
+
+          // width: 70%;
+
           h3 {
             font-size: 0.8rem;
             word-wrap: break-word;
