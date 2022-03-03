@@ -1,6 +1,7 @@
 import React from "react";
 import { MdOutlineLocationOn } from "react-icons/md";
 import topPic from "../image/top-me-pic.jpg";
+import { Link } from "react-router-dom";
 
 export const TopPage = () => {
   return (
@@ -29,10 +30,10 @@ export const TopPage = () => {
           </div>
           <div className="top-con-left-btn">
             <button className="btn btn-top">
-              <a href="/project">Project</a>
+              <Link to="/project">Project</Link>
             </button>
             <button className="btn btn-top">
-              <a href="/about">About me</a>
+              <Link to="/about">About me</Link>
             </button>
           </div>
         </div>

@@ -177,7 +177,7 @@
 
     .burgerNav {
       width: 30%;
-      height: 30vh;
+      height: auto;
 
       @media (min-width: 501px) and (max-width: 600px) {
         width: 40%;
@@ -213,7 +213,7 @@
     }
     .burgerNav {
       width: 40%;
-      height: 30vh;
+      height: auto;
 
       @media (min-width: 376px) and (max-width: 435px) {
         width: 48%;
@@ -251,7 +251,7 @@
 
     .burgerNav {
       width: 50%;
-      height: 25vh;
+      height: auto;
       padding: 0.8rem;
 
       &-ul {
