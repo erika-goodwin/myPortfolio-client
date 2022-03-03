@@ -12,13 +12,15 @@ export const ProjectPagePicture = ({ info, showModal }) => {
 
   useEffect(() => {
     // info !== undefined && setMobileImage(info.image[0].original);
-    if (info === undefined) {
-      return console.log("info undefined:", info);
-    } else {
-      console.log("info is not undefined", info.image[0].original);
-      const mobileImage = info.image[0].original;
-      setMobileImage(mobileImage);
-      console.log("mobileImage data: ", mobileImage);
+    if (windowSize.width <= 768) {
+      if (info === undefined) {
+        return console.log("info undefined:", info);
+      } else {
+        console.log("info is not undefined", info.image[0].original);
+        const mobileImage = info.image[0].original;
+        setMobileImage(mobileImage);
+        console.log("mobileImage data: ", mobileImage);
+      }
     }
   }, [info]);
 
