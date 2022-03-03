@@ -6,10 +6,20 @@ import { useEffect } from "react";
 
 export const ProjectPagePicture = ({ info, showModal }) => {
   const windowSize = useWindowSize();
-  const [mobileImage, setMobileImage] = useState('/projectlist-image/nodeblogapp-pic1.png')
+  const [mobileImage, setMobileImage] = useState(
+    "/projectlist-image/nodeblogapp-pic1.png"
+  );
 
   useEffect(() => {
-    setMobileImage(info.image[0].original);
+    // info !== undefined && setMobileImage(info.image[0].original);
+    if (info === undefined) {
+      return console.log("info undefined:", info);
+    } else {
+      console.log("info is not undefined", info.image[0].original);
+      const mobileImage = info.image[0].original;
+      setMobileImage(mobileImage);
+      console.log("mobileImage data: ", mobileImage);
+    }
   }, [info]);
 
   return (
@@ -28,10 +38,7 @@ export const ProjectPagePicture = ({ info, showModal }) => {
         </div>
       ) : (
         <div className="mobile-project-con-pic">
-          <img
-            src={mobileImage}
-            alt="projectImage"
-          />
+          <img src={mobileImage} alt="projectImage" />
         </div>
       )}
     </>

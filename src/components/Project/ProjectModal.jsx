@@ -11,8 +11,8 @@ const ProjectModal = ({ project, setShowModal }) => {
       <h4>{project.summary}</h4>
       <div className="project-con-left-comp-modal-tag ">
         <ul>
-          {tag?.map((tag) => (
-            <li>
+          {tag?.map((tag, index) => (
+            <li key={index}>
               <p>{tag}</p>
             </li>
           ))}
