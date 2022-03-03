@@ -9,7 +9,6 @@ export const ProjectPagePicture = ({ info, showModal }) => {
   const [mobileImage, setMobileImage] = useState(
     "/projectlist-image/nodeblogapp-pic1.png"
   );
-  console.log("hover");
   useEffect(() => {
     // info !== undefined && setMobileImage(info.image[0].original);
     if (windowSize.width <= 768) {
@@ -18,10 +17,8 @@ export const ProjectPagePicture = ({ info, showModal }) => {
       } else {
         setMobileImage(info.image[0].original);
       }
-      console.log(mobileImage);
-  
     }
-  }, [info]);
+  }, [windowSize.width]);
 
   return (
     <>
