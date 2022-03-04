@@ -20,7 +20,6 @@
   box-shadow: inset 4px 4px rgb(236, 15, 170), inset -4px -4px rgb(236, 15, 170);
 }
 
-
 *,
 *::before,
 *::after {
@@ -42,10 +41,11 @@ p {
 }
 
 .app-con {
-  height: 100vh;
+  // height: 100vh;
+  height: auto;
 
   width: 100%;
-  position: fixed;
+  // position: fixed;
   z-index: -1;
   overflow-y: auto;
   overflow-x: hidden;
