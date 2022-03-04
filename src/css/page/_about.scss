@@ -4,6 +4,13 @@
 
 .about-con {
   height: auto;
+
+  /* Normal */
+  @media (min-width: 769px) {
+    height: 92vh;
+  }
+
+  
   margin: 4vh;
   padding: 0.7rem 0;
   background-color: rgba(255, 255, 255, 0.459);
