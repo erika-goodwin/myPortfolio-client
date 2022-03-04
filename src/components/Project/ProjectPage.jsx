@@ -5,12 +5,16 @@ import { ProjectPageProjectList } from "./ProjectPageProjectList";
 import useWindowSize from "../../tool/useWindowSize";
 import MobileProjectList from "./MobileProjectList";
 
+import { ReactComponent as ReactLogo } from "../../image/loading.svg";
+
 export const ProjectPage = () => {
   const [projectData, setProjectData] = useState([]);
   const [selectedInfo, setSelectedInfo] = useState("");
 
   const [showModal, setShowModal] = useState(false);
   const windowSize = useWindowSize();
+
+  const [loading, setLoading] = useState(false);
 
   const showSelectedProject = (pickedId) => {
     setShowModal((pre) => !pre);
@@ -26,9 +30,14 @@ export const ProjectPage = () => {
   };
 
   useEffect(() => {
+    setLoading(true);
+
     fetch(`${process.env.REACT_APP_SERVER_URL}/api/projects`)
       .then((res) => res.json())
-      .then((res) => setProjectData(res))
+      .then((res) => {
+        setProjectData(res);
+        setLoading(false);
+      })
       // .then((res) => dispatch(res))
       .catch((err) => console.log("err", err));
   }, []);
@@ -37,6 +46,8 @@ export const ProjectPage = () => {
 
   return (
     <>
+      {loading && <ReactLogo className="project-con-logo" />}
+
       {windowSize.width > 768 ? (
         <>
           <div className="project-con-left">
