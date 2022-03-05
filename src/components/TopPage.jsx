@@ -15,7 +15,7 @@ export const TopPage = () => {
           <div className="top-con-left-me ">
             <div className="top-con-left-me-active">
               <h1>Hi, I'm Erika </h1>
-              <h2> &#60; Activity looking for a job &#62; </h2>
+              <h2> &#60; Activity seeking employment &#62; </h2>
             </div>
             <h5>
               Full-stack web developer with experience in HTML/CSS and

@@ -80,18 +80,36 @@ export const About = () => {
               </h4>
 
               <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum
-                officiis deleniti ratione cupiditate vitae asperiores nulla
-                earum numquam facere exercitationem repudiandae, natus dolorum.
-                Nulla minima quis voluptas dolorem aliquid Architecto. Ea,
-                repudiandae temporibus consectetur possimus quis asperiores
-                distinctio accusantium aliquid incidunt libero cumque maxime.
-                Eveniet autem quo consectetur! Recusandae, delectus! Magnam,
-                fugiat beatae quam deleniti molestiae harum cumque dolorem! Eos.
-                Dolorum, harum aperiam aliquam doloribus consequatur, inventore
-                modi odit officiis eum sunt expedita eaque. Impedit, facilis
-                fugit rerum doloribus ipsam provident culpa nemo labore nobis,
-                et optio Tempore, voluptas minus
+                I am a full-stack web developer who loves…. With experience in
+                HTML / CSS and Javascript. In my previous job as an airline
+                mechanical engineer, I used a variety of outdated web
+                applications that looked like they were made decades ago. Even
+                comparatively newer web applications used for creating formal
+                documents were marginal at best. I always wished that I could
+                improve it. I found it exciting thinking of ways I could utilize
+                web development in combination with my mechanical engineering
+                knowledge. That was the first step towards the coding world.
+                <br />
+                Since I started coding at my current school, I have been able to
+                learn and significantly grow my skill set. Lately, I am picking
+                up my confidence in myself including skills dealing with error,
+                coding, and learning new things that I have never tried before
+                on my own. I am always passionate about achieving small steps
+                every day, month, and year following my passion and plan. From
+                easy things to difficult things, it doesn't matter, I like the
+                feeling of accomplishment and moving forward. My current career
+                goal is to work in Canada, build my web developer career with
+                on-site learning and improve my knowledge. I'm now seeking a
+                full-time role where I can contribute my skills and knowledge to
+                help a company.
+                <br />
+                PS: Personal 2022 goal I am working on is to become a
+                rollerskater who flys under the sky like figure skaters. I
+                practice many tricks a few times a week, and I am preparing for
+                the moment to take off! My rollerskating journey IG ▷{" "}
+                <a href="https://www.instagram.com/erika.on.wheels/">
+                  @erika.on.wheels
+                </a>
               </p>
             </div>
             <div className="about-con-below-des-skill">

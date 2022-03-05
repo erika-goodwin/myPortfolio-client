@@ -30,9 +30,6 @@ function ContactMe() {
       .post(`${process.env.REACT_APP_SERVER_URL}/api/contact/send`, mailData)
       .then((res) => {
         resetForm();
-
-        console.log("then block");
-
         if (res.data.success === "success") {
           alert("Message Sent!");
         } else if (res.data.success === "fail") {
@@ -40,7 +37,6 @@ function ContactMe() {
         }
       })
       .catch((error) => {
-        console.log("catch block");
         console.log(error);
         alert("Message failed to send");
       })
