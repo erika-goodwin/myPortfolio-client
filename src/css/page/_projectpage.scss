@@ -2,6 +2,7 @@
 @use "../setting/font" as *;
 @use "../setting/mixin" as *;
 @use "../setting/tag" as *;
+@use "../setting/loading" as *;
 
 .project-con {
   height: 92vh;
@@ -12,14 +13,8 @@
   display: flex;
   flex-direction: row;
 
-  &-logo {
-    width: 40%;
-    height: 40%;
-
-    z-index: 100;
-    position: fixed;
-    top: 30%;
-    left: 30%;
+  &-loading-logo {
+    @include loading-logo;
   }
 
   &-left {

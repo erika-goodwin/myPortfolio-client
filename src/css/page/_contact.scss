@@ -1,12 +1,17 @@
 @use "../setting/color" as *;
 @use "../setting/font" as *;
 @use "../setting/mixin" as *;
+@use "../setting/loading" as *;
 
 .contact-con {
   height: 84vh;
   margin: 4vh;
   color: black;
   display: flex;
+
+  &-loading-logo {
+    @include loading-logo;
+  }
 
   &-form {
     width: 60%;

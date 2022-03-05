@@ -5,13 +5,16 @@ import ProjectImageGallery from "./ProjectImageGallery";
 import { BsGithub } from "react-icons/bs";
 import { ImEarth } from "react-icons/im";
 import useWindowSize from "../../tool/useWindowSize";
+import { ReactComponent as ReactLogo } from "../../image/loading.svg";
 
 function ProjectDetailPop() {
   let { detailId } = useParams();
   const [projectData, setProjectData] = useState([]);
   const windowSize = useWindowSize();
+  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
+    setIsLoading(true);
     fetch(`${process.env.REACT_APP_SERVER_URL}/api/projects`)
       .then((res) => res.json())
       .then((res) => {
@@ -20,11 +23,15 @@ function ProjectDetailPop() {
         setProjectData(selectedProject);
       })
       // .then((res) => dispatch(res))
-      .catch((err) => console.log("err", err));
+      .catch((err) => console.log("err", err))
+      .finally(() => {
+        setIsLoading(false);
+      });
   }, []);
 
   return (
     <>
+      {isLoading && <ReactLogo className="contact-con-loading-logo" />}
       <div className="project-detail ">
         {windowSize.width > 768 && (
           <div className="project-detail-left ">

@@ -12,6 +12,7 @@
 @use "setting/mixin" as *;
 @use "setting/button" as *;
 @use "setting/tag" as *;
+@use "setting/loading" as *;
 
 //react-image-gallery
 @import "~react-image-gallery/styles/scss/image-gallery.scss";

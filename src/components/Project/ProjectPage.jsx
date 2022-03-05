@@ -36,17 +36,19 @@ export const ProjectPage = () => {
       .then((res) => res.json())
       .then((res) => {
         setProjectData(res);
-        setLoading(false);
       })
       // .then((res) => dispatch(res))
-      .catch((err) => console.log("err", err));
+      .catch((err) => console.log("err", err))
+      .finally(() => {
+        setLoading(false);
+      });
   }, []);
 
   useEffect(() => {}, [selectedInfo]);
 
   return (
     <>
-      {loading && <ReactLogo className="project-con-logo" />}
+      {loading && <ReactLogo className="project-con-loading-logo" />}
 
       {windowSize.width > 768 ? (
         <>

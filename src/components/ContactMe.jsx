@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import { BsLinkedin, BsGithub } from "react-icons/bs";
 import axios from "axios";
 import { Form, Row, Col } from "react-bootstrap";
+import { useEffect } from "react";
+
+import { ReactComponent as ReactLogo } from "../image/loading.svg";
 
 function ContactMe() {
   const [name, setName] = useState("");
@@ -27,13 +30,20 @@ function ContactMe() {
       .post(`${process.env.REACT_APP_SERVER_URL}/api/contact/send`, mailData)
       .then((res) => {
         resetForm();
-        if (res.data.status === "success") {
+
+        console.log("then block");
+
+        if (res.data.success === "success") {
           alert("Message Sent!");
-        } else if (res.data.status === "fail") {
+        } else if (res.data.success === "fail") {
           alert("Message failed to send");
         }
       })
-      .catch((error) => console.log(error))
+      .catch((error) => {
+        console.log("catch block");
+        console.log(error);
+        alert("Message failed to send");
+      })
       .finally(() => {
         setIsLoading(false);
       });
@@ -41,6 +51,8 @@ function ContactMe() {
 
   return (
     <>
+      {isLoading && <ReactLogo className="contact-con-loading-logo" />}
+
       <div className="contact-con ">
         <div className="contact-con-form ">
           <div className="contact-con-form-center ">
