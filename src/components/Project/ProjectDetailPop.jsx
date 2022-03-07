@@ -6,6 +6,7 @@ import { BsGithub } from "react-icons/bs";
 import { ImEarth } from "react-icons/im";
 import useWindowSize from "../../tool/useWindowSize";
 import { ReactComponent as ReactLogo } from "../../image/loading.svg";
+import Footer from "../Footer";
 
 function ProjectDetailPop() {
   let { detailId } = useParams();
@@ -99,6 +100,7 @@ function ProjectDetailPop() {
             ))}
           </div>
         </div>
+        <Footer />
       </div>
     </>
   );

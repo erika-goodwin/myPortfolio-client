@@ -3,16 +3,20 @@
 @use "../setting/mixin" as *;
 
 .about-con {
-  height: auto;
-
+  // height: 90vh;
+  margin: 4vh;
   // /* Normal */
   // @media (min-width: 769px) {
   //   height: 92vh;
   // }
 
-  // margin: 4vh;
-  padding: 0.7rem 0;
-  background-color: rgba(255, 255, 255, 0.6);
+
+  &-bg {
+    background-color: rgba(255, 255, 255, 0.6);
+
+    padding: 1rem 0 1.5rem 0;
+  }
+
   &-top {
     padding: 0.5rem 0 0 0;
     height: auto;
@@ -228,7 +232,7 @@
 /* Normal(1) */
 @media (min-width: 1054px) and (max-width: 1200px) {
   .about-con {
-    height: auto;
+    height: 90vh;
     &-top {
       &-resume {
         display: flex;
@@ -301,7 +305,7 @@
 /* Normal(2) */
 @media (min-width: 769px) and (max-width: 1053px) {
   .about-con {
-    height: auto;
+    height: 90vh;
     &-top {
       &-resume {
         &-resumelink {
@@ -424,10 +428,9 @@
     height: auto;
     margin: 2vh;
 
-    // @media (min-width: 501px) and (max-width: 594px) {
-    //   height: 87vh;
-    //   margin: 1.5vh;
-    // }
+    @media (min-width: 501px) and (max-width: 594px) {
+      margin: 1.5vh;
+    }
 
     &-top {
       height: auto;
@@ -685,7 +688,7 @@
         top: 50%;
         @media (min-width: 376px) and (max-width: 430px) {
           right: 13%;
-        top: 50%;
+          top: 50%;
         }
 
         &-absolute {

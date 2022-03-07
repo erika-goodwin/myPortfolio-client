@@ -36,6 +36,12 @@ p {
   font-family: $font-sentence;
 }
 
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
 *,
 *::after,
 *::before {
@@ -44,13 +50,20 @@ p {
 
 .app-con {
   // height: 100vh;
-  height: auto;
+  // height: auto;
 
-  width: 100%;
+  // width: 100%;
   // position: fixed;
 
+  width: 100vw;
+  height: 100vh;
+  min-height: 100%;
+  box-sizing: border-box;
+  // overflow-x: hidden;
+  // overflow-y: hidden;
+
   /* Normal */
-  @media (min-width: 769px) {
+  @media (max-width: 769px) {
     height: 100vh;
   }
 
@@ -58,7 +71,7 @@ p {
   overflow-y: auto;
   overflow-x: hidden;
 
-  // position: relative;
+  //   // position: relative;
 }
 
 .app-con-background-top {
@@ -68,7 +81,6 @@ p {
   background-position: right 0 bottom 0;
 
   @media (max-width: 500px) {
-    
   }
 }
 .app-con-background-project {

@@ -17,6 +17,7 @@ const settingChanger = (location) => {
       footerPage = "foot-con-contact";
       break;
     default:
+      footerPage = "foot-con-detail";
       break;
   }
   return footerPage;
