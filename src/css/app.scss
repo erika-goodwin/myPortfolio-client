@@ -6,6 +6,7 @@
 @use "page/projectdetail";
 @use "page/about";
 @use "page/contact";
+@use "page/footer";
 
 @use "setting/color" as *;
 @use "setting/font" as *;
@@ -56,15 +57,18 @@ p {
   z-index: -1;
   overflow-y: auto;
   overflow-x: hidden;
+
+  // position: relative;
 }
 
 .app-con-background-top {
   background: url("../image/background-top.png") no-repeat right center;
   background-size: contain;
   background-color: $color-main;
+  background-position: right 0 bottom 0;
 
   @media (max-width: 500px) {
-    background-position: right 0 bottom 0;
+    
   }
 }
 .app-con-background-project {

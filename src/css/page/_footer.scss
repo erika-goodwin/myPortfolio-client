@@ -1,0 +1,54 @@
+@use "../setting/color" as *;
+@use "../setting/font" as *;
+@use "../setting/mixin" as *;
+@use "../setting/loading" as *;
+
+.foot-con {
+  padding-left: 1rem;
+  color: $color-backd;
+  font-size: 0.8rem;
+
+  &-top {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    color: white;
+  }
+
+  &-project {
+    @media (min-width: 769px) {
+      position: absolute;
+
+      bottom: 0;
+      left: 0;
+    }
+
+    @media (max-width: 768px) {
+    }
+  }
+  &-about {
+    @media (min-width: 769px) {
+    }
+
+    @media (max-width: 768px) {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      color: white;
+    }
+  }
+  &-contact {
+    @media (min-width: 769px) {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+    }
+
+    @media (max-width: 768px) {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      color: white;
+    }
+  }
+}

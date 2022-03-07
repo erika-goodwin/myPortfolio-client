@@ -6,6 +6,7 @@ import useWindowSize from "../../tool/useWindowSize";
 import MobileProjectList from "./MobileProjectList";
 
 import { ReactComponent as ReactLogo } from "../../image/loading.svg";
+import Footer from "../Footer";
 
 export const ProjectPage = () => {
   const [projectData, setProjectData] = useState([]);
@@ -88,6 +89,7 @@ export const ProjectPage = () => {
           })}
         </>
       )}
+      <Footer />
     </>
   );
 };

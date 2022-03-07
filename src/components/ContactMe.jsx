@@ -5,6 +5,7 @@ import { Form, Row, Col } from "react-bootstrap";
 import { useEffect } from "react";
 
 import { ReactComponent as ReactLogo } from "../image/loading.svg";
+import Footer from "./Footer";
 
 function ContactMe() {
   const [name, setName] = useState("");
@@ -161,6 +162,7 @@ function ContactMe() {
             </ul>
           </div>
         </div>
+        <Footer />
       </div>
     </>
   );

@@ -12,6 +12,7 @@ import ContactMe from "./components/ContactMe";
 import ProjectDetailPop from "./components/Project/ProjectDetailPop";
 
 
+
 const backgroundChanger = (location) => {
   let backgroundPic;
   switch (location.pathname) {
@@ -55,6 +56,7 @@ export default function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<ContactMe />} />
         </Routes>
+
       </div>
     </>
   );

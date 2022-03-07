@@ -2,6 +2,7 @@ import React from "react";
 import { MdOutlineLocationOn } from "react-icons/md";
 import topPic from "../image/top-me-pic.jpg";
 import { Link } from "react-router-dom";
+import Footer from "./Footer";
 
 export const TopPage = () => {
   return (
@@ -49,6 +50,7 @@ export const TopPage = () => {
             Botanical Lace Png vectors by Lovepik.com
           </a>
         </div>
+      <Footer />
       </div>
     </>
   );

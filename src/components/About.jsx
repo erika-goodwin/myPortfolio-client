@@ -13,9 +13,11 @@ import {
 import { FaNodeJs } from "react-icons/fa";
 import topPic from "../image/top-me-pic.jpg";
 import useWindowSize from "../tool/useWindowSize";
+import Footer from "./Footer";
 
 export const About = () => {
   const windowSize = useWindowSize();
+
   return (
     <>
       <div className="about-con">
@@ -46,11 +48,12 @@ export const About = () => {
             </ul>
             <div className="about-con-top-resume-resumelink">
               <a
-                href="https://drive.google.com/file/d/1As09ypqr_i5yOXXM-hAthQHbk1uJnHD4/viewusp=sharing"
+                href="/resumePdf/ErikaHashizume.pdf"
                 target="_blank"
-                rel="noreferrer"
+                // rel="noreferrer"
                 alt="resume"
                 className="btn-resume btn"
+                download
               >
                 Resume
               </a>
@@ -75,20 +78,19 @@ export const About = () => {
           <div className="about-con-below-des">
             <div className="about-con-below-des-summary ">
               <h4>
-                I am a Full-stack web developer with experience in HTML/CSS and
-                Javascript, currently in the process of completing my diploma.
+                I am a full-stack web developer with experience in HTML / CSS
+                and Javascript.
               </h4>
 
               <p>
-                I am a full-stack web developer who loves…. With experience in
-                HTML / CSS and Javascript. In my previous job as an airline
-                mechanical engineer, I used a variety of outdated web
-                applications that looked like they were made decades ago. Even
-                comparatively newer web applications used for creating formal
-                documents were marginal at best. I always wished that I could
-                improve it. I found it exciting thinking of ways I could utilize
-                web development in combination with my mechanical engineering
-                knowledge. That was the first step towards the coding world.
+                In my previous job as an airline mechanical engineer, I used a
+                variety of outdated web applications that looked like they were
+                made decades ago. Even comparatively newer web applications used
+                for creating formal documents were marginal at best. I always
+                wished that I could improve it. I found it exciting thinking of
+                ways I could utilize web development in combination with my
+                mechanical engineering knowledge. That was the first step
+                towards the coding world.
                 <br />
                 Since I started coding at my current school, I have been able to
                 learn and significantly grow my skill set. Lately, I am picking
@@ -104,7 +106,7 @@ export const About = () => {
                 help a company.
                 <br />
                 PS: Personal 2022 goal I am working on is to become a
-                rollerskater who flys under the sky like figure skaters. I
+                rollerskate who flies under the sky like figure skaters. I
                 practice many tricks a few times a week, and I am preparing for
                 the moment to take off! My rollerskating journey IG ▷{" "}
                 <a href="https://www.instagram.com/erika.on.wheels/">
@@ -162,6 +164,7 @@ export const About = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 };
