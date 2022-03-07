@@ -18,7 +18,8 @@
     flex-direction: row;
     flex-wrap: wrap;
     overflow-x: hidden;
-    justify-content: left;
+    justify-content: center;
+    align-content: space-around;
     li {
       list-style-type: none;
       background-color: $color-backl-8;
