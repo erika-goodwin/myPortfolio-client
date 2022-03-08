@@ -42,7 +42,7 @@ function ProjectDetailPop() {
           </div>
         )}
 
-        <div className="project-detail-right ">
+        <div className="project-detail-right">
           <div className="project-detail-right-titleLink ">
             <h1>{projectData.title}</h1>
             <div className="project-detail-right-titleLink-link ">
