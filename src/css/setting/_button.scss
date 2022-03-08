@@ -3,7 +3,6 @@
 @use "../setting/mixin" as *;
 
 .btn {
-  z-index: 10;
   font-size: 1.2rem;
   font-weight: 200;
   letter-spacing: 1px;
@@ -23,7 +22,6 @@
     width: 100%;
     height: 100%;
 
-    z-index: -1;
     position: absolute;
     top: 7px;
     left: 7px;
@@ -40,12 +38,18 @@
 
 .btn-top {
   border: 1px solid white;
+  a {
+    color: black;
+  }
 
   &:after {
     background-color: $color-third;
   }
   &:hover {
     border: none;
+
+    opacity: 0.8;
+
     a {
       color: white;
     }
