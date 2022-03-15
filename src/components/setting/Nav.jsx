@@ -3,8 +3,8 @@ import { Link, useLocation } from "react-router-dom";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import Burger from "./Burger";
-import useWindowSize from "../tool/useWindowSize";
-import { useOnClickOutside } from "../tool/useOnClickOutside";
+import useWindowSize from "../../tool/useWindowSize";
+import { useOnClickOutside } from "../../tool/useOnClickOutside";
 
 const navigationMenu = [
   { name: "Projects", url: "/project", current: true },

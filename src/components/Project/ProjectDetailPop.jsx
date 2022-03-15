@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import ProjectAccordion from "./ProjectAccordion";
 import ProjectImageGallery from "./ProjectImageGallery";
 import { BsGithub } from "react-icons/bs";
 import { ImEarth } from "react-icons/im";
 import useWindowSize from "../../tool/useWindowSize";
 import { ReactComponent as ReactLogo } from "../../image/loading.svg";
-import Footer from "../Footer";
+import Footer from "../setting/Footer";
 
 function ProjectDetailPop() {
   let { detailId } = useParams();
@@ -33,9 +33,9 @@ function ProjectDetailPop() {
   return (
     <>
       {isLoading && <ReactLogo className="contact-con-loading-logo" />}
-      <div className="project-detail ">
+      <div className="project-detail">
         {windowSize.width > 768 && (
-          <div className="project-detail-left ">
+          <div className="project-detail-left">
             {projectData && (
               <ProjectImageGallery imageData={projectData.image} />
             )}
@@ -43,7 +43,8 @@ function ProjectDetailPop() {
         )}
 
         <div className="project-detail-right">
-          <div className="project-detail-right-titleLink ">
+          <Link to='/project' className="backLink">	&#60; Back to list</Link>
+          <div className="project-detail-right-titleLink">
             <h1>{projectData.title}</h1>
             <div className="project-detail-right-titleLink-link ">
               <ul>

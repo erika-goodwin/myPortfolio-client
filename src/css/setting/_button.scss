@@ -57,8 +57,11 @@
 }
 
 .btn-resume {
-  border: 1px solid $color-main;
+  border: 1px solid white;
   opacity: 0.8;
+  a {
+    color: black;
+  }
   &:after {
     background-color: $color-main;
   }

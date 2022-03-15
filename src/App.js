@@ -1,15 +1,15 @@
 import React, { useEffect, useState } from "react";
-import Nav from "./components/Nav";
+import Nav from "./components/setting/Nav";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Routes, Route, useLocation } from "react-router-dom";
 
 import "./css/app.scss";
 import { TopPage } from "./components/TopPage";
-import { Project } from "./components/Project/Project";
-import { ProjectPage } from "./components/Project/ProjectPage";
+import { Project } from "./components/project/Project";
+import { ProjectPage } from "./components/project/ProjectPage";
 import { About } from "./components/About";
 import ContactMe from "./components/ContactMe";
-import ProjectDetailPop from "./components/Project/ProjectDetailPop";
+import ProjectDetailPop from "./components/project/ProjectDetailPop";
 
 
 

@@ -13,7 +13,7 @@ import {
 import { FaNodeJs } from "react-icons/fa";
 import topPic from "../image/top-me-pic.jpg";
 import useWindowSize from "../tool/useWindowSize";
-import Footer from "./Footer";
+import Footer from "./setting/Footer";
 
 export const About = () => {
   const windowSize = useWindowSize();
@@ -96,7 +96,7 @@ export const About = () => {
                   Since I started coding at my current school, I have been able
                   to learn and significantly grow my skill set. Lately, I am
                   picking up my confidence in myself including skills dealing
-                  with error, coding, and learning new things that I have never
+                  with errors, coding, and learning new things that I have never
                   tried before on my own. I am always passionate about achieving
                   small steps every day, month, and year following my passion
                   and plan. From easy things to difficult things, it doesn't
@@ -117,28 +117,58 @@ export const About = () => {
               </div>
               <div className="about-con-below-des-skill">
                 <h3>Technical Skill</h3>
-                <div className="about-con-below-des-skill-con ">
-                  <div className="about-con-below-des-skill-con-con1">
-                    <div className="Lang skill-logo">
-                      <h4>Language</h4>
-                      <div className="logoflexbox">
-                        <ImHtmlFive className="logo ImHtmlFive" />
-                        <ImCss3 className="logo ImCss3" />
-                        <SiJavascript className="logo SiJavascript" />
-                        <SiReact className="logo SiReact" />
-                        <FaNodeJs className="logo FaNodeJs" />
+                <div className="about-con-below-des-skill-con">
+                  <div className="about-con-below-des-skill-con-con1 ">
+                    <div className="skill-logo">
+                      <h4>Languages</h4>
+                      <div className="gridbox">
+                        <div className="gridbox-item ">
+                          <ImHtmlFive className="logo ImHtmlFive" />
+                          <p>HTML5</p>
+                        </div>
+                        <div className="gridbox-item ">
+                          <ImCss3 className="logo ImCss3" />
+                          <p>CSS</p>
+                        </div>
+                        <div className="gridbox-item ">
+                          <SiJavascript className="logo SiJavascript" />
+                          <p>JavaScript</p>
+                        </div>
+                        <div className="gridbox-item">
+                          <SiReact className="logo SiReact" />
+                          <p>React.js</p>
+                        </div>
+                        <div className="gridbox-item">
+                          <FaNodeJs className="logo FaNodeJs" />
+                          <p>Node.js</p>
+                        </div>
                       </div>
                     </div>
                   </div>
                   <div className="about-con-below-des-skill-con-con2">
-                    <div className="frame skill-logo">
+                    <div className="skill-logo">
                       <h4>Frameworks / Libraries</h4>
-                      <div className="logoflexbox">
-                        <IoLogoSass className="logo IoLogoSass" />
-                        <SiTailwindcss className="logo SiTailwindcss" />
-                        <SiBootstrap className="logo SiBootstrap" />
-                        <SiRedux className="logo SiRedux" />
-                        <SiExpress className="logo SiExpress" />
+                      <div className="logoflexbox gridbox">
+                        <div className="gridbox-item ">
+                          <IoLogoSass className="logo IoLogoSass" />
+                          <p>HTML5</p>
+                        </div>
+                        <div className="gridbox-item">
+                          <SiTailwindcss className="logo SiTailwindcss" />
+                          <p>CSS</p>
+                        </div>
+                        <div className="gridbox-item">
+                          <SiBootstrap className="logo SiBootstrap" />
+                          <p>JavaScript</p>
+                        </div>
+                        <div className="gridbox-item">
+                          <SiRedux className="logo SiRedux" />
+                          <p>React.js</p>
+                        </div>
+                        <div className="gridbox-item">
+                          <SiExpress className="logo SiExpress" />
+                          <p>Node.js</p>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -148,18 +178,24 @@ export const About = () => {
                 <h3>Education/Experience</h3>
                 <div className="about-con-below-des-education-con">
                   <div className="grid">
-                    <p>2021-prev</p>
-                    <h5>Web and Mobile Application Development Diploma</h5>
-                    <p>
+                    <p className="item1">2021-Now</p>
+                    <h5 className="item2">
+                      Web and Mobile Application Development Diploma
+                    </h5>
+                    <p className="item3">
                       - Cornerstone International Community College, Vancouver,
                       BC
                     </p>
-                    <p>2017-2021</p>
-                    <h5>Airplane Mechanical Engineer</h5>
-                    <p>- AIRDO Co., Ltd. ,Japan</p>
-                    <p>2013-2017</p>
-                    <h5>Bachelor’s degree in Aerospace Engineering</h5>
-                    <p>- Muroran Institute of Technology, Japan</p>
+                    <p className="item4">2017-2021</p>
+                    <h5 className="item5">Airplane Mechanical Engineer</h5>
+                    <p className="item6">- AIRDO Co., Ltd. ,Japan</p>
+                    <p className="item7">2013-2017</p>
+                    <h5 className="item8">
+                      Bachelor’s degree in Aerospace Engineering
+                    </h5>
+                    <p className="item9">
+                      - Muroran Institute of Technology, Japan
+                    </p>
                   </div>
                 </div>
               </div>

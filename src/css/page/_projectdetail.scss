@@ -20,6 +20,21 @@
   &-right {
     width: 40%;
     padding: 5rem 5rem 5rem 2rem;
+    position: relative;
+
+    .backLink {
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 1rem;
+
+      text-decoration: none;
+      color: #777;
+
+      &:hover {
+        color: $color-third;
+      }
+    }
 
     &-titleLink {
       width: 100%;
@@ -79,7 +94,6 @@
 
     &-accordion {
       padding: 2rem 0;
-
 
       .accordion {
         background-color: #eee;
@@ -206,6 +220,21 @@
     &-right {
       width: 100%;
       padding: 2rem 1.5rem 0 1rem;
+      position: relative;
+
+      .backLink {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 0;
+
+        text-decoration: none;
+        color: #777;
+
+        &:hover {
+          color: $color-third;
+        }
+      }
 
       &-titleLink {
         width: 100%;

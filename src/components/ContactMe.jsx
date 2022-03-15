@@ -5,7 +5,7 @@ import { Form, Row, Col } from "react-bootstrap";
 import { useEffect } from "react";
 
 import { ReactComponent as ReactLogo } from "../image/loading.svg";
-import Footer from "./Footer";
+import Footer from "./setting/Footer";
 
 function ContactMe() {
   const [name, setName] = useState("");
@@ -13,6 +13,7 @@ function ContactMe() {
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
   const [isLoading, setIsLoading] = useState(false);
+  const [isSent, setIsSent] = useState(false);
 
   const resetForm = () => {
     setName("");
@@ -32,7 +33,9 @@ function ContactMe() {
       .then((res) => {
         resetForm();
         if (res.data.success === "success") {
-          alert("Message Sent!");
+          setIsLoading(false);
+
+          // alert("Message Sent!");
         } else if (res.data.success === "fail") {
           alert("Message failed to send");
         }
@@ -42,9 +45,15 @@ function ContactMe() {
         alert("Message failed to send");
       })
       .finally(() => {
-        setIsLoading(false);
+        setIsSent(true);
       });
   };
+
+  useEffect(() => {
+    setTimeout(() => {
+      setIsSent(false);
+    }, 3000);
+  }, [isSent]);
 
   return (
     <>
@@ -124,6 +133,7 @@ function ContactMe() {
                   />
                   <div className="submitting">
                     {isLoading && <h4>Sending....</h4>}
+                    {isSent && <h4>Message Sent!</h4>}
                   </div>
                 </div>
               </div>
@@ -134,11 +144,11 @@ function ContactMe() {
           <div className="contact-con-social-comment ">
             <h3>Thank you so much !</h3>
             <h5>I will get back to you as soon as possible.</h5>
-            <h5>Please allow me some time to replay. Have a good day.</h5>
+            <h5>Please allow me some time to reply. Have a good day.</h5>
           </div>
           <div className="contact-con-social-links ">
-            <h3> Connect with me on SNS</h3>
-            <ul className="">
+            <h3> Connect with me</h3>
+            <ul>
               <li>
                 <a
                   href="https://www.linkedin.com/in/erika-hashizume-37295a153/"

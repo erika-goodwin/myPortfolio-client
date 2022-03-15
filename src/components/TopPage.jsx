@@ -2,7 +2,7 @@ import React from "react";
 import { MdOutlineLocationOn } from "react-icons/md";
 import topPic from "../image/top-me-pic.jpg";
 import { Link } from "react-router-dom";
-import Footer from "./Footer";
+import Footer from "./setting/Footer";
 
 export const TopPage = () => {
   return (
@@ -16,7 +16,7 @@ export const TopPage = () => {
           <div className="top-con-left-me ">
             <div className="top-con-left-me-active">
               <h1>Hi, I'm Erika </h1>
-              <h2> &#60; Activity seeking employment &#62; </h2>
+              <h2> &#60; Actively seeking employment &#62; </h2>
             </div>
             <h5>
               Full-stack web developer with experience in HTML/CSS and
@@ -30,12 +30,13 @@ export const TopPage = () => {
             </h5>
           </div>
           <div className="top-con-left-btn">
-            <button className="btn btn-top">
-              <Link to="/project">Project</Link>
-            </button>
-            <button className="btn btn-top">
-              <Link to="/about">About me</Link>
-            </button>
+            <Link to="/project">
+              <button className="btn btn-top">Project </button>
+            </Link>
+
+            <Link to="/about">
+              <button className="btn btn-top">About me </button>
+            </Link>
           </div>
         </div>
 
@@ -50,7 +51,7 @@ export const TopPage = () => {
             Botanical Lace Png vectors by Lovepik.com
           </a>
         </div>
-      <Footer />
+        <Footer />
       </div>
     </>
   );

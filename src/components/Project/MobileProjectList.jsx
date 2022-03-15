@@ -1,7 +1,7 @@
 import React from "react";
 import { ProjectPagePicture } from "./ProjectPagePicture";
 import { Link } from "react-router-dom";
-import Footer from "../Footer";
+import Footer from "../setting/Footer";
 
 function MobileProjectList({ data, info, showModal, onHover, onLeave }) {
   const tag = data.LangTag;
