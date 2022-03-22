@@ -25,6 +25,7 @@
       h5 {
         padding-left: 1rem;
         margin: auto 0;
+        text-shadow: 1px 1px 3px gray;
       }
     }
     &-me {
@@ -34,8 +35,11 @@
         justify-content: space-between;
         margin-bottom: 1.5rem;
 
+      
+
         h1 {
           font-family: $font-title;
+          text-shadow: 1px 1px 3px gray;
         }
         h2 {
           text-align: center;
@@ -47,6 +51,7 @@
         }
       }
       h5 {
+        text-shadow: 1px 1px 3px gray;
       }
     }
     &-btn {
