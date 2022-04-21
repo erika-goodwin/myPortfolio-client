@@ -19,13 +19,13 @@ export const TopPage = () => {
               <h2> &#60; Actively seeking employment &#62; </h2>
             </div>
             <h5>
-              Full-stack web developer with experience in HTML/CSS and
+              Frontend web developer with experience in HTML/CSS and
               Javascript, currently in the process of completing my diploma.
               <br />
               <br /> My previous experience as an Airline engineer allowed me to
               gain troubleshooting and problem-solving skills to identify
               defects and improve reliability. I am motivated to continue
-              learning and applying these skills working as part of a full-stack
+              learning and applying these skills working as part of a Frontend
               web developer team.
             </h5>
           </div>
