@@ -1,70 +1,35 @@
-# Getting Started with Create React App
+## My portfolio - client side
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+ <img width="715" alt="My Portfolio" src="https://user-images.githubusercontent.com/58070973/157274154-dea593ec-df8c-4707-98a7-dcaf3b614659.png">
 
-## Available Scripts
+This is a MERN app with Nodemailer. The application is designed by SASS without any CSS framework. The database is MongoDB. 
 
-In the project directory, you can run:
+  - **Speck:** React, Node, Express, MongoDB, Mongoose, NodeMailer, Sass
+  - **Server side:** [Check here](https://github.com/erika-goodwin/myPortfolio-server/tree/master)
+  
+  - **Check App:** [Check here](https://erika-poimap.vercel.app/)
+  
 
-### `npm start`
+### Why made me create this app?
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This is my portfolio! I was an airline mechanical engineer and now I am going to change my career from the airline industry to the tech world. I couldn't imagine that I became to be able to build web applications by myself (of course, sometimes had my friend and teacher's help and advice)! I believe I put all I learned into this portfolio. Now I am ready to find a job!
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### What was challenging?
 
-### `npm test`
+Day by day, I learn new things and useful things. Eventually, I find my favorite spec to use such as Tailwindcss. They are super easy and user-friendly. However, I decided to use SASS for writing all code by myself for this project. Since the project is bigger than before, it was tough than I imagined. It was nice to control a small adjustment of design. But it was challenging that I need to set all small tiny designs. But I enjoyed it! 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Goals for Improvement
 
-### `npm run build`
+Sometimes, I ask around what you think about this portfolio and receive some feedback from people. It is very interesting that what we see, find, or experience from one same thing is totally different. What I add something I thought good doesn't work same to others. So now I have many on the list to improve, change, or add to my portfolio. Soon or later, it will be updated!  
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<img width="715" alt="Screen Shot 2022-04-28 at 9 37 29" src="https://user-images.githubusercontent.com/58070973/165801750-1156903e-ece2-4132-a42a-8c9500a9aa9d.png">
 
-### `npm run eject`
+<img width="715" alt="Screen Shot 2022-04-28 at 9 35 28" src="https://user-images.githubusercontent.com/58070973/165801462-3ac61fe8-ee6e-4e2c-8df7-066bd97d4542.png">
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<img width="715" alt="Screen Shot 2022-04-28 at 9 35 37" src="https://user-images.githubusercontent.com/58070973/165801442-1b7ca719-aaf0-4c0b-a0e5-6174f9d63ad0.png">
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
