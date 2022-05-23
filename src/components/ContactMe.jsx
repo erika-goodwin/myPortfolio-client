@@ -151,7 +151,7 @@ function ContactMe() {
             <ul>
               <li>
                 <a
-                  href="https://www.linkedin.com/in/erika-hashizume-37295a153/"
+                  href="https://www.linkedin.com/in/erika-hashizume/"
                   target="_blank"
                   rel="noreferrer"
                   alt="linkdin"
