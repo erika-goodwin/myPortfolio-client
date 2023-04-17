@@ -178,22 +178,29 @@ export const About = () => {
                 <h3>Education/Experience</h3>
                 <div className="about-con-below-des-education-con">
                   <div className="grid">
-                    <p className="item1">2021-Now</p>
-                    <h5 className="item2">
+                    <p className="item1">2022-Present</p>
+                    <h5 className="item2">Front End Developer </h5>
+                    <a href="https://conversion.com/" className="item3">
+                      <p>
+                        - <span>Conversion</span>, Canada
+                      </p>
+                    </a>
+                    <p className="item4">2021-2023</p>
+                    <h5 className="item5">
                       Web and Mobile Application Development Diploma
                     </h5>
-                    <p className="item3">
+                    <p className="item6">
                       - Cornerstone International Community College, Vancouver,
                       BC
                     </p>
-                    <p className="item4">2017-2021</p>
-                    <h5 className="item5">Airplane Mechanical Engineer</h5>
-                    <p className="item6">- AIRDO Co., Ltd. ,Japan</p>
-                    <p className="item7">2013-2017</p>
-                    <h5 className="item8">
-                      Bachelor’s degree in Aerospace Engineering
+                    <p className="item7">2017-2021</p>
+                    <h5 className="item8">Airplane Mechanical Engineer</h5>
+                    <p className="item9">- AIRDO Co., Ltd. , Japan</p>
+                    <p className="item10">2013-2017</p>
+                    <h5 className="item11">
+                      Bachelors degree in Aerospace Engineering
                     </h5>
-                    <p className="item9">
+                    <p className="item12">
                       - Muroran Institute of Technology, Japan
                     </p>
                   </div>

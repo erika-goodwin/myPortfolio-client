@@ -235,6 +235,17 @@
             grid-template-columns: 10% 50% 40%;
             background-color: rgba(255, 255, 255, 0.623);
             padding: 1rem;
+
+            a.item3 {
+              cursor: pointer;
+              text-decoration: none;
+              color: black;
+              p {
+                span {
+                  text-decoration: underline;
+                }
+              }
+            }
           }
         }
       }
@@ -468,7 +479,6 @@
           }
         }
 
-
         &-education {
           padding: 1rem 1rem 0 1rem;
           h3 {
@@ -507,6 +517,16 @@
               grid-area: place3;
               text-align: right;
             }
+            .item10 {
+              grid-area: year4;
+            }
+            .item11 {
+              grid-area: title4;
+            }
+            .item12 {
+              grid-area: place4;
+              text-align: right;
+            }
 
             .grid {
               grid-template-areas:
@@ -515,7 +535,9 @@
                 "year2  title2 title2"
                 "place2 place2 place2"
                 "year3 title3 title3"
-                "place3 place3 place3";
+                "place3 place3 place3"
+                "year4 title4 title4"
+                "place4 place4 place4";
 
               h5 {
                 font-size: 1rem;
@@ -833,7 +855,6 @@
           top: 43%;
         }
 
-
         &-absolute {
           &-picCont {
             h2 {
@@ -975,6 +996,16 @@
               grid-area: place3;
               text-align: right;
             }
+            .item10 {
+              grid-area: year4;
+            }
+            .item11 {
+              grid-area: title4;
+            }
+            .item12 {
+              grid-area: place4;
+              text-align: right;
+            }
 
             .grid {
               grid-template-areas:
@@ -983,7 +1014,9 @@
                 "year2  title2 title2"
                 "place2 place2 place2"
                 "year3 title3 title3"
-                "place3 place3 place3";
+                "place3 place3 place3"
+                "year4 title4 title4"
+                "place4 place4 place4";
 
               h5 {
                 font-size: 0.8rem;
@@ -1192,6 +1225,16 @@
               grid-area: place3;
               text-align: right;
             }
+            .item10 {
+              grid-area: year4;
+            }
+            .item11 {
+              grid-area: title4;
+            }
+            .item12 {
+              grid-area: place4;
+              text-align: right;
+            }
 
             .grid {
               grid-template-areas:
@@ -1200,7 +1243,9 @@
                 "year2  title2 title2"
                 "place2 place2 place2"
                 "year3 title3 title3"
-                "place3 place3 place3";
+                "place3 place3 place3"
+                "year4 title4 title4"
+                "place4 place4 place4";
 
               h5 {
                 font-size: 0.8rem;
