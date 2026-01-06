@@ -7,7 +7,7 @@ This is a MERN app with Nodemailer. The application is designed by SASS without 
   - **Spec:** React, Node, Express, MongoDB, Mongoose, NodeMailer, Sass
   - **Server side:** [Check here](https://github.com/erika-goodwin/myPortfolio-server/tree/master)
   
-  - **Check App:** [Check here](https://www.erikahashizu.me/)
+  - **Check App:** [Check here]([https://www.erikahashizu.me/](https://erikahashizume-portfolio.netlify.app/))
   
 
 ### Why made me create this app?
